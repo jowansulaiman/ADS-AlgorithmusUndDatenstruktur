@@ -4,10 +4,15 @@ public class BubbleSort implements Sort {
     @Override
     public void sort(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
+            boolean swaped = false;
             for (int j = 0; j < arr.length - i - 1; j++) {
                 if (arr[j] >= arr[j + 1]) {
                     swap(arr, j, j + 1);
+                    swaped = true;
                 }
+            }
+            if (!swaped) {
+                return;
             }
         }
     }
@@ -20,7 +25,7 @@ public class BubbleSort implements Sort {
         int arr2[] = {12, 34, 10, 6, 40};
         bubble.sort(arr1);
         for (int i = 0; i < arr1.length; i++) {
-            System.out.print(arr1[i] + ", ");
+            System.out.print(arr1[i] + " ");
         }
     }
 }
