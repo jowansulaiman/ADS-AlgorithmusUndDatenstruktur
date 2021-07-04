@@ -16,10 +16,8 @@ public class KnapSack {
                 }
             }
         }
-
         return K[n][capacity];
     }
-
 
     public static void main(String[] args) {
         int val[] = new int[]{60, 100, 120};
