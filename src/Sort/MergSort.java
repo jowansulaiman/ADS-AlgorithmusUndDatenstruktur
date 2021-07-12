@@ -20,6 +20,11 @@ public class MergSort implements Sort {
         }
     }
 
+    @Override
+    public void sort(int[] arr, int left, int right) {
+
+    }
+
     public static void merge(int S1[], int S2[], int S[]) {
         int left = 0, right = 0;
         int mid = 0;

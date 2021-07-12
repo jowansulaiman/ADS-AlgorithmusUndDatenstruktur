@@ -7,7 +7,7 @@ public class BubbleSort implements Sort {
             boolean swaped = false;
             for (int j = 0; j < arr.length - i - 1; j++) {
                 if (arr[j] >= arr[j + 1]) {
-                    swap(arr, j, j + 1);
+                    Sort.swap(arr, j, j + 1);
                     swaped = true;
                 }
             }
@@ -15,6 +15,11 @@ public class BubbleSort implements Sort {
                 return;
             }
         }
+    }
+
+    @Override
+    public void sort(int[] arr, int left, int right) {
+
     }
 
     public static void main(String[] args) {

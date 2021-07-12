@@ -13,8 +13,13 @@ public class SelectionSort implements Sort {
                     indexOfMin = j;
                 }
             }
-            swap(arr, i, indexOfMin);
+            Sort.swap(arr, i, indexOfMin);
         }
+    }
+
+    @Override
+    public void sort(int[] arr, int left, int right) {
+
     }
 
 

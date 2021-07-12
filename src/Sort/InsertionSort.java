@@ -24,4 +24,9 @@ public class InsertionSort implements Sort {
             arr[j + 1] = x;
         }
     }
+
+    @Override
+    public void sort(int[] arr, int left, int right) {
+
+    }
 }

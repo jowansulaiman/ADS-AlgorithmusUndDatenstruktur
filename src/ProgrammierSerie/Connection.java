@@ -90,7 +90,6 @@ public class Connection {
             Connection c = (Connection) obj;
             return (c.airport1.equals(this.airport1) && c.airport2.equals(this.airport2))
                     || (c.airport1.equals(this.airport2) && c.airport2.equals(this.airport1));
-
         } else {
             return false;
         }
