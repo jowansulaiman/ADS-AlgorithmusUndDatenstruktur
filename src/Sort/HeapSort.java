@@ -61,19 +61,25 @@ public class HeapSort implements Sort {
         }
     }
 
+    /**
+     * Eine Methode, die die Elemente in der Liste an die Console ausdrueckt.
+     *
+     * @param arr eine Liste von ganzyahlen.
+     */
+    static void toString(int arr[]) {
+        for (int i : arr) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+    }
+
 
     public static void main(String[] args) {
         HeapSort heap = new HeapSort();
-
         int[] arr = {16, 4, 10, 90, 4, 0, 123, 14, 7, 9, 3, 2, 8, 1};
-        for (int i : arr) {
-            System.out.print(" " + i);
-        }
-        System.out.println(" ");
-        heap.sort(arr);
 
-        for (int i : arr) {
-            System.out.print(" " + i);
-        }
+        heap.toString(arr);
+        heap.sort(arr);
+        heap.toString(arr);
     }
 }
