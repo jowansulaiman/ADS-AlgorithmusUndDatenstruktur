@@ -18,7 +18,7 @@ public class BucketSort implements Sort {
             nr[arr[i]].add(arr[i]);
         }
 
-        for (int i = 0; i < nr.length; i++) {
+        for (int i = 1; i < nr.length; i++) {
             if (nr[i].size() > 0) {
                 for (int j = 0; j < nr[i].size(); j++) {
                     nr[0].add(nr[i].get(j));
