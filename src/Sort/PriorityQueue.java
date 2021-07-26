@@ -47,6 +47,11 @@ public class PriorityQueue {
         heap.toString(arr);
     }
 
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
     public static void main(String[] args) {
         int[] arr = {16, 4, 10, 90, 4, 0, 123, 14, 7, 9, 3, 2, 8, 1};
         int[] arr1 = {16, 4, 10, 90};
