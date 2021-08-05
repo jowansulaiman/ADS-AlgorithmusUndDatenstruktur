@@ -20,11 +20,6 @@ public class MergSort implements Sort {
         }
     }
 
-    @Override
-    public void sort(int[] arr, int left, int right) {
-
-    }
-
     public static void merge(int S1[], int S2[], int S[]) {
         int left = 0, right = 0;
         int mid = 0;
@@ -43,7 +38,7 @@ public class MergSort implements Sort {
             left++;
             mid++;
         }
-        while ( right < S2.length) {
+        while (right < S2.length) {
             S[mid] = S2[right];
             right++;
             mid++;
@@ -76,6 +71,15 @@ public class MergSort implements Sort {
         }
     }
 
+    static String toString(int arr[]) {
+        String element = "{ ";
+        int i;
+        for (i = 0; i < arr.length - 1; i++) {
+            element += arr[i] + ", ";
+        }
+        return element + arr[i] + " }";
+    }
+
     public static void main(String[] args) {
         MergSort mergSort = new MergSort();
 
@@ -83,10 +87,6 @@ public class MergSort implements Sort {
         int[] arr1 = {10, 14, 28, 11, 7, 16, 30, 50, 25, 18};
         int arr2[] = {12, 34, 10, 6, 40};
         mergSort.sort(arr1);
-        for (int i = 0; i < arr1.length; i++) {
-            System.out.print(arr1[i] + " ");
-        }
+        System.out.println(toString(arr1));
     }
-
-
 }

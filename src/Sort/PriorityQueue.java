@@ -43,23 +43,21 @@ public class PriorityQueue {
         return arr[0];
     }
 
-    static void toString(int x) {
+    static void ttoString() {
         heap.toString(arr);
     }
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
 
     public static void main(String[] args) {
         int[] arr = {16, 4, 10, 90, 4, 0, 123, 14, 7, 9, 3, 2, 8, 1};
         int[] arr1 = {16, 4, 10, 90};
 
         PriorityQueue priorityQueue = new PriorityQueue(arr1);
+        priorityQueue.ttoString();
         priorityQueue.EXTRACTMAXIMUM();
+        priorityQueue.ttoString();
         priorityQueue.add(13);
-        priorityQueue.toString(3);
+        priorityQueue.ttoString();
         System.out.println(priorityQueue.MAXIMUM());
     }
 }

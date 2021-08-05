@@ -58,7 +58,7 @@ public class KnapSack {
         int val[] = new int[]{60, 100000, 100000000};
         int wt[] = new int[]{10, 20, 30};
 
-        int W = 60;
+        int W = 20;
         System.out.println(knapSack(W, wt, val));
         System.out.println(knap(W, wt, val));
 
